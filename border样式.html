@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<style>
+			*{margin:0;padding:0;color:red;}
+			html,body{height:100%;}
+			.box{height:200px;background-color:red;}
+			p.box{background-color:yellow;}
+			p{color:blue;}
+			#boxBorder{
+				margin:5px;
+				width:300px;
+				height:300px;
+				border-top:20px double #abcdef;
+				border-left:20px double red;
+				border-right:20px double yellow;
+				border-bottom:20px double green;
+			}
+			/*#boxBorder:hover{
+				border-color:red;
+			}*/
+			#boxBorderFather{
+				width:350px;
+				border-top:20px double #abcdef;
+				border-left:20px double red;
+				border-right:20px double yellow;
+				border-bottom:20px double green;
+			}
+			#boxTwo{
+				width:10px;
+				height:10px;
+				border:200px solid transparent;
+				border-bottom-color:black;
+				border-top-color:yellow;
+				border-left-color:red;
+				border-right-color:green;
+			}
+			#borderR{
+				margin:auto;
+				width:600px;
+				height:300px;
+				background-color:red;
+				border-radius:40% 40% 0% 0%/100% 100% 0  0;
+			}
+			.eyes{
+			
+				width:600px;
+				height:300px;
+				border:5px double black;
+				overflow:hidden;
+				box-shadow:3px 3px 5px 10px #ccc;
+			}
+			#eyesr{
+				border-radius:50% 0% 50% 0%/100% 0% 100% 0;
+				margin-left:30px;
+			}
+			#eyesl{
+				border-radius: 0% 40%  0% 40%/ 0% 100% 0 100%;
+			}
+			.eyes div{
+				width:200px;
+				height:200px;
+				background-color:black;
+				margin:50px auto;
+			}
+			nav{
+				width:100px;
+				height:100px;
+				margin:100px;
+				overflow-y:hidden;
+				overflow-x:visible;
+			}
+			section{
+				width:180px;
+				background:red;
+				margin:auto;
+				height:100px;
+				box-shadow:0px 0px 10px 1px #ccc;
+			}
+			#border-img{
+				width:200px;
+				height:200px;
+				border:20px solid #ccc;
+				border-image:url(border.png) 27 stretch;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<section></section>
+		</nav>
+		<p class="box">123</p>
+		<div id="boxBorderFather">
+			<div id="boxBorder">
+				123
+			</div>
+		</div>
+		<div id="boxTwo"></div>
+		<div id="borderR"> </div>
+		<div id="eyesl" class="eyes">
+			<div>
+				
+			</div>
+		</div>
+		<div id="eyesr" class="eyes">
+			<div></div>
+		</div>
+		<div id="border-img"></div>
+	</body>
+</html>
